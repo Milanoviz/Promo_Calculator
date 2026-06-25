@@ -59,12 +59,15 @@ namespace Modules.Calculator.Scripts.UI.Presenter
             var expression = _view.GetInput();
             var calculationResult = _calculatorProcessor.Calculate(expression);
 
-            if (!calculationResult.IsSuccess)
+            if (calculationResult.IsSuccess)
+            {
+                _view.SetInput(string.Empty);
+            }
+            else
             {
                 ShowNotification(calculationResult.Message);
             }
             
-            _view.SetInput(string.Empty);
             SetHistory(_stateService.GetHistory());
         }
 

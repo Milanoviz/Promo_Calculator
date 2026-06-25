@@ -10,21 +10,28 @@ namespace Modules.Calculator.Scripts.Helper
         
         public string Build(IReadOnlyList<CalculationResultState> resultStates)
         {
-            if (resultStates == null)
+            if (resultStates == null || resultStates.Count == 0)
             {
                 return string.Empty;
             }
             
             _stringBuilder.Clear();
 
-            foreach (var resultState in resultStates)
+            for (var i = resultStates.Count - 1; i >= 0; i--)
             {
+                var resultState = resultStates[i];
+
                 _stringBuilder
                     .Append(resultState.Expression)
                     .Append('=')
-                    .AppendLine(resultState.Result);
+                    .Append(resultState.Result);
+
+                if (i > 0)
+                {
+                    _stringBuilder.AppendLine();
+                }
             }
-            
+
             return _stringBuilder.ToString();
         }
     }

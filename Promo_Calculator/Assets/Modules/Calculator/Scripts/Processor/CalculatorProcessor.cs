@@ -31,7 +31,7 @@ namespace Modules.Calculator.Scripts.Processor
         {
             if (!_calculatorOperationProvider.TryGetOperation(expression, out var operation))
             {
-                return CalculationResult.Failed(expression, "Unknown operation type");
+                return CalculationResult.Failed(expression, "Please check the expression you just entered");
             }
 
             return operation.Calculate(expression);
