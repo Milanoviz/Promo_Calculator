@@ -1,0 +1,74 @@
+# =============== #
+# Unity generated #
+# =============== #
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# Asset meta data should not be ignored; comment next line if you want to ignore it
+#*.meta
+
+# Uncomment this line if you wish to ignore the auto-generated VS/MD solution files
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# Unity3D generated file on crash reports
+sysinfo.txt
+
+# =============== #
+# OS generated    #
+# =============== #
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =============== #
+# Visual Studio    #
+# =============== #
+
+.vscode/
+.vs/
+*.code-workspace
+
+# =============== #
+# JetBrains Rider #
+# =============== #
+
+.idea/
+*.sln.iml
+
+# =============== #
+# Unity Cache & Build #
+# =============== #
+
+# Cache server
+/Library/Cache/
+# Asset store tools
+/Assets/AssetStoreTools*
+
+# =============== #
+# Optional: Packages #
+# =============== #
+
+# Uncomment to ignore the Packages/ folder if you use local packages
+# /Packages/*
